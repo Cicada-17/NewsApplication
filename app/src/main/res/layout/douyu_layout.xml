@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<com.liuzhao.widget.CustomRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:orientation="vertical"
+        >
+        <!--Top导航栏布局-->
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@color/mask_tags_8"
+            android:gravity="bottom"
+            >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="49dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="直播"
+                    android:layout_centerInParent="true"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+        <!--中间内容后面放入Fragment-->
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+            <fragment
+                android:id="@+id/douyu_info_fragment"
+                class="com.liuzhao.fragment.DouyuInfoFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@color/mask_tags_6">
+        <include layout="@layout/bottom_bar"/>
+    </RelativeLayout>
+</RelativeLayout>

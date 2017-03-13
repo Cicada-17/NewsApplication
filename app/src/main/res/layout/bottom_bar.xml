@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/color_white"
+    android:orientation="horizontal"
+    tools:showIn="@layout/bottom_bar">
+
+    <TextView
+        android:id="@+id/one"
+        style="@style/viewpager_navigation_bar_tab_style"
+        android:drawableTop="@drawable/tab_one"
+        android:textSize="12sp"
+        android:text="@string/item_home"/>
+
+    <TextView
+        android:id="@+id/two"
+        style="@style/viewpager_navigation_bar_tab_style"
+        android:drawableTop="@drawable/tab_two"
+        android:textSize="12sp"
+        android:transitionName="page_two"
+        android:text="@string/item_location"/>
+
+    <TextView
+        android:id="@+id/three"
+        style="@style/viewpager_navigation_bar_tab_style"
+        android:drawableTop="@drawable/tab_three"
+        android:textSize="12sp"
+        android:text="@string/item_like"/>
+
+    <TextView
+        android:id="@+id/four"
+        style="@style/viewpager_navigation_bar_tab_style"
+        android:drawableTop="@drawable/tab_four"
+        android:textSize="12sp"
+        android:text="@string/item_person"/>
+</LinearLayout>

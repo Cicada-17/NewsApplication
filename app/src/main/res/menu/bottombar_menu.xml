@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tab_one"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="0"
+        android:icon="@drawable/tab_one"
+        android:title="@string/tab_one_title"
+    />
+
+    <item
+        android:id="@+id/tab_two"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="1"
+        android:icon="@drawable/tab_two"
+        android:title="@string/tab_two_title"
+    />
+
+    <item
+        android:id="@+id/tab_three"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2"
+        android:icon="@drawable/tab_three"
+        android:title="@string/tab_three_title"
+    />
+
+    <item
+        android:id="@+id/tab_four"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="3"
+        android:icon="@drawable/tab_four"
+        android:title="@string/tab_four_title"
+    />
+</menu>

@@ -1,0 +1,232 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="30dp"
+
+    android:paddingTop="50dp"
+    >
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="北京"
+            android:id="@+id/cityname"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updatetime"
+            android:text="更新时间"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+        <ImageView
+            android:id="@+id/iv_bottom"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icon_avatar"
+            android:layout_gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wendu"
+                android:text="简介:XXXX"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+                android:id="@+id/tianqitype"
+                android:text="名字:XXX"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="联系作者方式：XXXX"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <!--中间列表-->
+   <!-- <ListView
+        android:layout_marginTop="100dp"
+        android:cacheColorHint="#00000000"
+        android:scrollbars="none"
+        android:id="@+id/lv_left_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>-->
+    <LinearLayout
+        android:layout_marginTop="180dp"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="今天"
+                android:id="@+id/jintian"
+                android:gravity="center"
+
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:id="@+id/jintianimage"
+                android:src="@drawable/w0"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/jintiantq"
+                android:text="晴"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/jintianqw"
+                android:text="-4/5"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/jintianfeng"
+                android:text="2级南风"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="明天"
+                android:id="@+id/mingtian"
+                android:gravity="center"
+
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:id="@+id/mingtianimage"
+                android:src="@drawable/w0"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mingtiantq"
+                android:text="晴"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mingtianqw"
+                android:text="-4/5"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mingtianfeng"
+                android:text="2级南风"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="后天"
+                android:id="@+id/houtian"
+                android:gravity="center"
+
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:id="@+id/houtianimage"
+                android:src="@drawable/w0"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/houtiantq"
+                android:text="晴"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/houtianqw"
+                android:text="-4/5"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/houtianfeng"
+                android:text="2级南风"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

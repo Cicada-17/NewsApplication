@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/color_white">
+    <RelativeLayout
+        android:id="@+id/room_item"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:layout_marginBottom="18dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="2dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="tab图标"/>
+
+        <TextView
+            android:id="@+id/nickname"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/online"
+            android:textSize="12sp"
+            android:textColor="#d9d9d9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="直播间标题"
+       android:layout_alignParentBottom="true"
+        android:id="@+id/room_name"
+        android:gravity="center_horizontal"
+        android:textColor="@color/color_black"
+        android:maxLines="1"
+        android:ellipsize="end"
+
+
+        />
+</RelativeLayout>
